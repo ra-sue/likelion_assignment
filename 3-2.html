@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+
+    <style>
+        li {
+            list-style: none;
+            margin-left: 50px;}
+
+        .sub { 
+            font-size: 18px;
+            width: 50px;
+            color: green;
+            font-weight: bold;
+            float: left;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>멋사 특강 신청</h1>
+    <form>
+    <fieldset>
+        <legend>수강 신청인</legend>
+        <ul>
+            <li><label class="sub" for="univ" >대학교</label><input type="text"></li><br>
+            <li><label class="sub" for="name">이름</label><input type="text"></li><br>
+            <li><label class="sub" for="major">학과</label>
+                <select>
+                <optgroup label="공과대학">
+                    <option value="1">건축공학과</option>
+                    <option value="2">기계공학과</option>
+                    <option value="3">산업공학과</option>
+                    <option value="4">전기전자공학과</option>
+                    <option value="5">컴퓨터공학과</option>
+                    <option value="6">화학공학과</option>
+                </optgroup>
+                <optgroup label="인문대학">
+                    <option value="1">사학과</option>
+                    <option value="2">어문학부</option>
+                    <option value="3">철학과</option>
+                </optgroup>
+                 </select></li>
+        </ul>
+    </fieldset> 
+    </form>
+</body>
+</html>
